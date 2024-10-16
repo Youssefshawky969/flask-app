@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 # This function is executed when the homepage is accessed and returns a simple message.
 def home():
-    return "Hello, World! My name is Youssef Shawky and this is a simple python web app Automated by jenkins."
+    return "Hello, World! My name is Youssef Shawky and this is a simple python web app Automated by Jenkins."
 
 
 if __name__ == '__main__':  #a common Python idiom used to control the behavior of a script when it's run directly.
