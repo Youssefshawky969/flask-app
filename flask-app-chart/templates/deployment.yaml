@@ -1,6 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: {{ .Values.namespaceOverride | default .Release.Namespace }}
   name: {{ include "flask-app-chart.fullname" . }}
   labels:
     {{- include "flask-app-chart.labels" . | nindent 4 }}
